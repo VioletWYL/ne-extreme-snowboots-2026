@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>东北冬季极寒徒步雪地靴采购深度调研与反软广审查报告 (2026)</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 11mm 11mm 13mm 11mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    :root {
+      --ink: #141b24;
+      --muted: #4b5766;
+      --light-muted: #6c7887;
+      --paper: #ffffff;
+      --surface: #f6f5f1;
+      --surface-ice: #edf2f6;
+      --border: #d5dce3;
+      --border-strong: #9aa8b6;
+      --navy: #183b54;
+      --vermilion: #be3e22;
+      --amber-bg: #fdf5ec;
+      --amber-border: #e5b887;
+      --emerald: #1b5e43;
+      --emerald-bg: #eef7f2;
+      --serif: "Noto Serif CJK SC", "Noto Serif SC", "Source Han Serif SC", Georgia, serif;
+      --sans: "Noto Sans CJK SC", "Noto Sans SC", "Source Han Sans SC", sans-serif;
+      --mono: "Noto Sans Mono CJK SC", "JetBrains Mono", monospace;
+    }
+
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--paper);
+      font-size: 8.5pt;
+      line-height: 1.44;
+    }
+
+    a {
+      color: var(--navy);
+      text-decoration: underline;
+      text-underline-offset: 1.5px;
+    }
+
+    .page {
+      page-break-after: always;
+      break-after: page;
+      position: relative;
+    }
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    /* Running Top Header inside each page */
+    .page-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1.5px solid var(--ink);
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      font-size: 7.1pt;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+    .page-topbar > div:last-child {
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .page-topbar strong {
+      color: var(--ink);
+      font-family: var(--mono);
+    }
+
+    /* Page 1 Masthead */
+    .cover-masthead {
+      background: var(--navy);
+      color: #ffffff;
+      padding: 14px 16px 13px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      border-bottom: 3.5px solid var(--vermilion);
+    }
+    .cover-kicker {
+      font-family: var(--mono);
+      font-size: 7.2pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #b8cedd;
+      margin-bottom: 5px;
+    }
+    .cover-title {
+      font-family: var(--serif);
+      font-size: 17.5pt;
+      font-weight: 700;
+      line-height: 1.24;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+    .cover-subtitle {
+      font-size: 8.6pt;
+      color: #dce7ef;
+      line-height: 1.4;
+      margin-bottom: 9px;
+    }
+    .cover-meta-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 7.4pt;
+    }
+    .cover-meta-item span {
+      display: block;
+      color: #9fc0d6;
+      font-size: 6.8pt;
+    }
+    .cover-meta-item strong {
+      font-family: var(--mono);
+      color: #ffffff;
+      font-size: 8.2pt;
+    }
+
+    .online-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--surface-ice);
+      border: 1px solid #bfd0de;
+      border-radius: 3px;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      font-size: 7.5pt;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-left: 3.5px solid var(--vermilion);
+      padding-left: 8px;
+      margin: 8px 0 6px;
+    }
+    .section-heading h2 {
+      font-family: var(--serif);
+      font-size: 11.2pt;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .section-heading span {
+      font-size: 7.2pt;
+      color: var(--muted);
+      font-family: var(--mono);
+    }
+
+    /* Engineering Profile Grid */
+    .eng-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px;
+      margin-bottom: 10px;
+    }
+    .eng-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 7px 8px;
+    }
+    .eng-card h3 {
+      font-size: 8.2pt;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 3px;
+    }
+    .eng-card p {
+      font-size: 7.4pt;
+      color: var(--muted);
+      line-height: 1.42;
+    }
+
+    /* Champions Strip on Page 1 */
+    .champions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 9px;
+    }
+    .champ-card {
+      border: 1.2px solid var(--navy);
+      border-radius: 4px;
+      padding: 8px 9px;
+      background: #ffffff;
+      position: relative;
+    }
+    .champ-card.overall {
+      border-color: var(--vermilion);
+      background: #fffaf8;
+    }
+    .champ-badge {
+      display: inline-block;
+      font-size: 6.8pt;
+      font-weight: 700;
+      padding: 1.5px 6px;
+      border-radius: 2px;
+      background: var(--navy);
+      color: #fff;
+      margin-bottom: 4px;
+    }
+    .champ-card.overall .champ-badge {
+      background: var(--vermilion);
+    }
+    .champ-top {
+      display: flex;
+      gap: 7px;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .champ-top img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      background: #fff;
+      flex-shrink: 0;
+    }
+    .champ-title {
+      font-family: var(--serif);
+      font-size: 8.8pt;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+    .champ-sku {
+      font-family: var(--mono);
+      font-size: 6.9pt;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+    .champ-price {
+      font-family: var(--mono);
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: var(--vermilion);
+      margin-top: 1px;
+    }
+    .champ-desc {
+      font-size: 7.3pt;
+      color: var(--ink);
+      line-height: 1.38;
+      border-top: 1px dashed var(--border);
+      padding-top: 4px;
+    }
+
+    /* Audit Quick Summary Box on Page 1 */
+    .audit-summary-banner {
+      background: var(--emerald-bg);
+      border: 1px solid #a9d5be;
+      border-radius: 3px;
+      padding: 7px 10px;
+      font-size: 7.5pt;
+      line-height: 1.42;
+    }
+    .audit-summary-banner strong {
+      color: var(--emerald);
+    }
+
+    /* Product Dossier Cards (2 per page on Pages 2-6) */
+    .boot-card {
+      border: 1px solid var(--border-strong);
+      border-radius: 4px;
+      background: #ffffff;
+      margin-bottom: 8px;
+      overflow: hidden;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .boot-card.winner {
+      border: 1.5px solid var(--vermilion);
+    }
+    .boot-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 5px 9px;
+    }
+    .boot-card.winner .boot-card-header {
+      background: #fdf2ef;
+      border-bottom-color: #ecc6bc;
+    }
+    .boot-header-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .boot-num {
+      font-family: var(--mono);
+      font-size: 7.5pt;
+      font-weight: 700;
+      background: var(--ink);
+      color: #fff;
+      padding: 1px 5px;
+      border-radius: 2px;
+    }
+    .boot-cat-tag {
+      font-size: 7pt;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 2px;
+      background: var(--navy);
+      color: #fff;
+    }
+    .boot-winner-tag {
+      font-size: 7pt;
+      font-weight: 700;
+      padding: 1px 6px;
+      border-radius: 2px;
+      background: var(--vermilion);
+      color: #fff;
+    }
+    .boot-name {
+      font-family: var(--serif);
+      font-size: 9.4pt;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .boot-price-box {
+      text-align: right;
+      font-family: var(--mono);
+      flex-shrink: 0;
+    }
+    .boot-price-street {
+      font-size: 8.4pt;
+      font-weight: 700;
+      color: var(--vermilion);
+    }
+    .boot-price-msrp {
+      font-size: 6.8pt;
+      color: var(--light-muted);
+      margin-left: 4px;
+    }
+
+    .boot-body {
+      display: grid;
+      grid-template-columns: 126px 1fr;
+      gap: 9px;
+      padding: 7px 9px;
+    }
+    .boot-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .boot-img-wrap {
+      width: 126px;
+      height: 116px;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px;
+    }
+    .boot-img-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    .boot-sku-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 3px 5px;
+      font-size: 6.7pt;
+      line-height: 1.3;
+    }
+    .boot-sku-box strong {
+      display: block;
+      color: var(--navy);
+      font-family: var(--mono);
+    }
+    .boot-links-box {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: 6.8pt;
+      background: var(--surface-ice);
+      border: 1px solid #c9d8e4;
+      border-radius: 2px;
+      padding: 3.5px 5px;
+    }
+    .boot-links-box a {
+      font-weight: 600;
+      color: var(--navy);
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .boot-right {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .spec-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 6px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 4px 6px;
+      font-size: 6.9pt;
+      line-height: 1.28;
+    }
+    .spec-cell span {
+      color: var(--light-muted);
+    }
+    .spec-cell strong {
+      color: var(--ink);
+    }
+
+    .boot-text-row {
+      font-size: 7.25pt;
+      line-height: 1.37;
+      color: var(--ink);
+    }
+    .boot-text-row .lbl {
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .fit-strip {
+      background: #f2f6fa;
+      border-left: 2.5px solid var(--navy);
+      padding: 3.5px 6px;
+      font-size: 7.1pt;
+      line-height: 1.34;
+    }
+    .fit-strip strong.sz {
+      color: var(--vermilion);
+      font-family: var(--mono);
+    }
+
+    .cons-strip {
+      background: var(--amber-bg);
+      border-left: 2.5px solid #d97724;
+      padding: 3.5px 6px;
+      font-size: 6.95pt;
+      line-height: 1.32;
+      color: #5a3410;
+    }
+
+    .audit-foot {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      background: var(--emerald-bg);
+      border: 1px solid #bde0ce;
+      border-radius: 2px;
+      padding: 3.5px 6px;
+      font-size: 6.75pt;
+      color: #164934;
+      line-height: 1.3;
+    }
+
+    /* Comparison Table on Page 7 */
+    table.comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 6.7pt;
+      line-height: 1.28;
+      margin-bottom: 8px;
+      table-layout: fixed;
+    }
+    table.comp-table th {
+      background: var(--navy);
+      color: #ffffff;
+      font-weight: 700;
+      text-align: left;
+      padding: 4px 3.5px;
+      border: 1px solid #122d40;
+    }
+    table.comp-table td {
+      padding: 3.5px 3.5px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+      word-wrap: break-word;
+    }
+    table.comp-table tr:nth-child(even) td {
+      background: #faf9f6;
+    }
+    table.comp-table tr.win-row td {
+      background: #fff4f0;
+      border-top: 1.2px solid #df9583;
+      border-bottom: 1.2px solid #df9583;
+    }
+
+    /* Eliminated & Anti-ad tables */
+    table.compact-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 6.6pt;
+      line-height: 1.27;
+      margin-bottom: 6px;
+    }
+    table.compact-table th {
+      background: #283645;
+      color: #fff;
+      padding: 3px 4.5px;
+      text-align: left;
+      border: 1px solid #283645;
+    }
+    table.compact-table td {
+      padding: 2.7px 4.5px;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    table.compact-table tr:nth-child(even) td {
+      background: var(--surface);
+    }
+
+    .kit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .kit-box {
+      border: 1px solid var(--border-strong);
+      border-radius: 3px;
+      padding: 4.5px 6.5px;
+      background: var(--surface);
+      font-size: 6.8pt;
+      line-height: 1.3;
+    }
+    .kit-box h4 {
+      font-size: 7.4pt;
+      color: var(--navy);
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div id="print-root"></div>
+
+  <script src="./data.js"></script>
+  <script>
+    (function renderPrintReport() {
+      const D = window.PROCUREMENT_DATA;
+      const root = document.getElementById("print-root");
+
+      const topBar = (pageNo, totalPages, sectionTitle) => `
+        <div class="page-topbar">
+          <div><strong>NE-SNOWBOOTS-2026</strong> ｜ 东北极寒徒步雪地靴采购调研与反软广审查 ｜ ${sectionTitle}</div>
+          <div>画像：男 180cm/80kg · 44码脚 · 48码裤 ｜ <strong>Page ${pageNo} / ${totalPages}</strong></div>
+        </div>
+      `;
+
+      const winners = [
+        D.products.find(p => p.id === "decathlon-sh500-mountain"),
+        D.products.find(p => p.id === "columbia-bugaboot-iii"),
+        D.products.find(p => p.id === "keen-revel-iv-high")
+      ];
+
+      // Page 1: Cover + Engineering + Executive Verdict + Audit Overview
+      let html = `
+        <section class="page">
+          <div class="cover-masthead">
+            <div class="cover-kicker">NORTHEAST WINTER EXPEDITION FOOTWEAR PROCUREMENT &amp; ANTI-SHILL AUDIT · ${D.meta.auditDate}</div>
+            <h1 class="cover-title">${D.meta.title}</h1>
+            <p class="cover-subtitle">${D.meta.subtitle}</p>
+            <div class="cover-meta-bar">
+              <div class="cover-meta-item">
+                <span>目标采购人身体参数</span>
+                <strong>男 · 180cm / 80kg</strong>
+              </div>
+              <div class="cover-meta-item">
+                <span>鞋裤尺码基准</span>
+                <strong>日常鞋44码 · 裤48码</strong>
+              </div>
+              <div class="cover-meta-item">
+                <span>全网评论池 / 精读样本</span>
+                <strong>${D.meta.stats.totalPoolReviews} / 精读${D.meta.stats.sampledReviewsRead}条</strong>
+              </div>
+              <div class="cover-meta-item">
+                <span>独立实验室测评 / 反软广剔除</span>
+                <strong>${D.meta.stats.proTestsRead}篇实测 / 剔除${D.meta.stats.rejectedAdCases}例</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="online-bar">
+            <div><strong>在线交互网站：</strong><a href="${D.meta.liveSiteUrl}">${D.meta.liveSiteUrl}</a></div>
+            <div><strong>Google 云盘归档：</strong><a href="${D.meta.driveFileUrl || D.meta.driveFolderUrl}">${D.meta.driveFileUrl ? "采购/东北冬季极寒徒步雪地靴采购调研报告_2026.pdf" : "采购/ 专项目录直达"}</a></div>
+          </div>
+
+          <div class="section-heading">
+            <h2>一、 针对 180cm/80kg · 鞋44码 · 裤48码 的极寒选靴工程学</h2>
+            <span>BIOMECHANICS &amp; THERMAL FIT</span>
+          </div>
+          <div class="eng-grid">
+            ${D.userProfile.engineeringNotes.map(n => `
+              <div class="eng-card">
+                <h3>${n.title}</h3>
+                <p>${n.detail}</p>
+              </div>
+            `).join("")}
+          </div>
+
+          <div class="section-heading">
+            <h2>二、 三大品类终极推荐速览（闭眼入决策卡）</h2>
+            <span>CATEGORY ULTIMATE PICKS</span>
+          </div>
+          <div class="champions-grid">
+            ${winners.map((w, idx) => `
+              <div class="champ-card ${idx === 2 ? 'overall' : ''}">
+                <span class="champ-badge">${w.winnerTitle}</span>
+                <div class="champ-top">
+                  <img src="${w.image}" alt="${w.name}" />
+                  <div>
+                    <div class="champ-title">${w.brand.split(" ")[0]} · ${w.name.replace(/^.*?男款|^.*?男士/, "")}</div>
+                    <div class="champ-sku">SKU: ${w.sku.split("（")[0]}</div>
+                    <div class="champ-price">${w.streetPrice.split("（")[0]}</div>
+                  </div>
+                </div>
+                <div class="champ-desc">
+                  <strong>44码选码：</strong>${w.fitAdvice.recommendedSize}<br/>
+                  <strong>温标/单重：</strong>静 ${w.specs.tempStatic} / 动 ${w.specs.tempActive} ｜ ${w.specs.weightSingle}<br/>
+                  <strong>核心优势：</strong>${idx === 0 ? "迪卡侬唯一真山地抗扭底盘（5mm深齿+双金属钩锁踝），高产热徒步不闷脚；若去漠河-35°C久站则切同门 SH900 真皮内胆款(8901614)。" : idx === 1 ? "OGL最佳性价比奖，18.3cm涉水高度+46.9mm超厚抗冻中底完美托住80kg负重，大促600元档防护力越级。" : "400g保温+三层蜂窝隔冷底+显微玻璃纤维冰底，解剖学宽楦让44码脚穿厚羊毛袜五趾舒展防冻伤，全牛巴戈真皮无开裂隐患！"}
+                </div>
+              </div>
+            `).join("")}
+          </div>
+
+          <div class="section-heading">
+            <h2>三、 采购内容审查与反软广方法论声明</h2>
+            <span>INDEPENDENT AUDIT SUMMARY</span>
+          </div>
+          <div class="audit-summary-banner">
+            <strong>审查结论：全部 10 款入选型号均通过“四级信源漏斗”交叉核验，实现 0% 商业软广污染。</strong><br/>
+            1. <strong>评论与实测覆盖量：</strong>穿透核查迪卡侬 8 国官网、京东自营、天猫官旗、Amazon、REI Co-op、Backcountry、Zappos 累计逾 <strong>${D.meta.stats.totalPoolReviews} 条真实购买评价</strong>；人工逐条精读 <strong>${D.meta.stats.sampledReviewsRead} 条用户评价（重点锁定 1–3★ 退货差评与跨季开裂/漏水追评）</strong>，并交叉研读 RunRepeat（电锯切割与 -20°C 冰柜实测）、OutdoorGearLab（静水漫灌与冰浴热流失实测）、Switchback Travel、CleverHiker 等 <strong>${D.meta.stats.independentOutlets} 家独立机构共 ${D.meta.stats.proTestsRead} 篇深度实测</strong>。<br/>
+            2. <strong>主动排雷与纠偏：</strong>现场抓获并拉黑搜狐号 <code>122645099</code>（9月初哈尔滨+20°C伪造“-15°C雪乡实测”）、淘宝 <code>pc_page_gen_ai.png</code> AI 导购页、海外撤稿抄袭站 <code>Top-Notch Outdoor</code>、值得买单双克重混淆软文，并穿透四国官网纠正全网误传的 KEEN 错码 <code>1023620</code> 及迪卡侬港台站 <code>-35°C</code> 换算录入 Bug（详见第 8 页审查台账）。
+          </div>
+        </section>
+      `;
+
+      // Pages 2–6: 10 Product Dossier Cards (2 cards per page = 5 pages)
+      const totalPages = 8;
+      for (let i = 0; i < D.products.length; i += 2) {
+        const pageNo = 2 + Math.floor(i / 2);
+        const pair = D.products.slice(i, i + 2);
+        const sectionLabel = `单品深度档案 #${pair[0].index} – #${pair[pair.length - 1].index}`;
+        html += `<section class="page">${topBar(pageNo, totalPages, sectionLabel)}`;
+        pair.forEach(p => {
+          html += `
+            <article class="boot-card ${p.isCategoryWinner ? 'winner' : ''}">
+              <div class="boot-card-header">
+                <div class="boot-header-left">
+                  <span class="boot-num">#${String(p.index).padStart(2, "0")}</span>
+                  <span class="boot-cat-tag">${p.categoryLabel} · ${p.tierTag}</span>
+                  ${p.isCategoryWinner ? `<span class="boot-winner-tag">★ ${p.winnerTitle}</span>` : ""}
+                  <span class="boot-name">${p.name}</span>
+                </div>
+                <div class="boot-price-box">
+                  <span class="boot-price-street">到手 ${p.streetPrice}</span>
+                  <span class="boot-price-msrp">吊牌 ${p.msrpPrice}</span>
+                </div>
+              </div>
+              <div class="boot-body">
+                <div class="boot-left">
+                  <div class="boot-img-wrap">
+                    <img src="${p.image}" alt="${p.name}" />
+                  </div>
+                  <div class="boot-sku-box">
+                    <span>准确型号 / 官方货号</span>
+                    <strong>${p.sku}</strong>
+                  </div>
+                  <div class="boot-links-box">
+                    <a href="${p.officialUrl}">↗ 品牌官网产品页直达</a>
+                    <a href="${p.jdUrl}">↗ 京东购买/自营检索页</a>
+                    <a href="${p.taobaoUrl}">↗ 淘宝/天猫官方购买页</a>
+                  </div>
+                </div>
+                <div class="boot-right">
+                  <div class="spec-strip">
+                    <div class="spec-cell"><span>保暖科技：</span><strong>${p.specs.insulation}</strong></div>
+                    <div class="spec-cell"><span>防水体系：</span><strong>${p.specs.waterproof}</strong></div>
+                    <div class="spec-cell"><span>大底/齿深：</span><strong>${p.specs.outsole} (${p.specs.lugDepth})</strong></div>
+                    <div class="spec-cell"><span>静/动态温标：</span><strong>静 ${p.specs.tempStatic} / 动 ${p.specs.tempActive}</strong></div>
+                    <div class="spec-cell"><span>单重/筒高：</span><strong>${p.specs.weightSingle} / 高 ${p.specs.shaftHeight}</strong></div>
+                    <div class="spec-cell"><span>冰爪/内胆：</span><strong>${p.specs.removableLiner.split("（")[0]} · ${p.specs.cramponFit.split("（")[0]}</strong></div>
+                  </div>
+                  <div class="boot-text-row">
+                    <span class="lbl">【官方介绍】</span>${p.officialIntro}
+                  </div>
+                  <div class="boot-text-row">
+                    <span class="lbl">【推荐理由】</span>${p.recommendReason}
+                  </div>
+                  <div class="fit-strip">
+                    <strong>【180/80 · 44码脚 · 48码裤专属方案】</strong>建议选购尺码：<strong class="sz">${p.fitAdvice.recommendedSize}</strong>（${p.fitAdvice.sizeReason}）｜<strong>48码雪裤兼容：</strong>${p.fitAdvice.pant48Fit}
+                  </div>
+                  <div class="cons-strip">
+                    <strong>【真实差评与硬伤披露】</strong>① ${p.consDisclosure[0]} ② ${p.consDisclosure[1]}
+                  </div>
+                  <div class="audit-foot">
+                    <div><strong>【内容与评论核验】</strong>全网评论池 ${p.audit.totalReviews} ｜ 人工精读 <strong>${p.audit.sampledReviews}条</strong> 评价 + <strong>${p.audit.proReviews}篇</strong> 专业测评（${p.audit.proSources}）</div>
+                    <div><strong>【下单验真与避坑】</strong>${p.buyNote.replace(/^【.*?】|^批次提示：/, "")}</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          `;
+        });
+        html += `</section>`;
+      }
+
+      // Page 7: 10-Model Multi-Dimensional Comparison Matrix + Eliminated Candidates
+      html += `
+        <section class="page">
+          ${topBar(7, totalPages, "10款多维对比矩阵与淘汰排雷")}
+          <div class="section-heading" style="margin-top:2px;">
+            <h2>四、 三大品类 10 款雪地徒步靴多维度工程参数横评总表</h2>
+            <span>MULTI-DIMENSIONAL COMPARISON MATRIX</span>
+          </div>
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th style="width:5%;">#/类</th>
+                <th style="width:15%;">品牌与准确产品名</th>
+                <th style="width:9%;">具体型号/货号</th>
+                <th style="width:9%;">到手价(吊牌)</th>
+                <th style="width:13%;">核心保暖与内胆</th>
+                <th style="width:11%;">防水结构/涉水深</th>
+                <th style="width:11%;">大底配方/齿深</th>
+                <th style="width:7%;">单重/筒高</th>
+                <th style="width:7%;">静/动温标</th>
+                <th style="width:7%;">44码选码</th>
+                <th style="width:6%;">评论/抽检</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${D.products.map(p => `
+                <tr class="${p.isCategoryWinner ? 'win-row' : ''}">
+                  <td><strong>#${p.index}</strong><br/>${p.categoryLabel}${p.isCategoryWinner ? '<br/><span style="color:#be3e22;font-weight:700;">★首选</span>' : ''}</td>
+                  <td><strong>${p.brand.split(" ")[0]}</strong><br/>${p.name.replace(/^DECATHLON |^QUECHUA |^Columbia |^Merrell |^Kamik |^凯乐石 |^Salomon |^KEEN |^LOWA /, "")}</td>
+                  <td style="font-family:var(--mono);font-size:6.3pt;">${p.sku.split("（")[0]}</td>
+                  <td style="font-family:var(--mono);"><strong style="color:#be3e22;">${p.streetPrice.split("（")[0]}</strong><br/><span style="color:#6c7887;">(${p.msrpPrice.split("（")[0]})</span></td>
+                  <td>${p.specs.insulation}</td>
+                  <td>${p.specs.waterproof}</td>
+                  <td>${p.specs.outsole.split("+")[0]}<br/><strong>${p.specs.lugDepth.split("（")[0]}</strong></td>
+                  <td style="font-family:var(--mono);">${p.specs.weightSingle.split("（")[0]}<br/>${p.specs.shaftHeight.split("（")[0]}</td>
+                  <td style="font-family:var(--mono);">静${p.specs.tempStatic.split("（")[0]}<br/><strong>动${p.specs.tempActive.split("（")[0]}</strong></td>
+                  <td style="font-family:var(--mono);font-weight:700;color:#183b54;">${p.fitAdvice.recommendedSize.split("（")[0]}</td>
+                  <td style="font-family:var(--mono);">${p.audit.totalReviews.replace(" 条","").split("（")[0]}<br/>读${p.audit.sampledReviews}+${p.audit.proReviews}篇</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+
+          <div class="section-heading">
+            <h2>五、 候选池横向实测淘汰记录（为什么不推荐这些热门款？）</h2>
+            <span>TESTED &amp; DISMISSED MODELS</span>
+          </div>
+          <table class="compact-table">
+            <thead>
+              <tr>
+                <th style="width:32%;">被淘汰的热门/网红型号</th>
+                <th style="width:68%;">工程参数短板与真实差评淘汰原因（针对东北极寒徒步需求）</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${D.eliminatedSummary.map(e => `
+                <tr>
+                  <td><strong>${e.model}</strong></td>
+                  <td>${e.reason}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </section>
+      `;
+
+      // Page 8: Final Kit Checklist + Credibility Framework + Anti-Ad Audit Evidence Log
+      html += `
+        <section class="page">
+          ${topBar(8, totalPages, "终极配套清单与反软广取证台账")}
+          <div class="section-heading" style="margin-top:2px;">
+            <h2>六、 东北极寒徒步“鞋+袜+雪套+冰爪”完整闭环采购清单</h2>
+            <span>MANDATORY FOOTWEAR SYSTEM</span>
+          </div>
+          <div class="kit-grid">
+            ${D.essentialKit.map(k => `
+              <div class="kit-box">
+                <h4>${k.item}</h4>
+                <p><strong>规格要求：</strong>${k.spec}</p>
+                <p style="margin-top:3px;color:#be3e22;"><strong>预算与铁律：</strong>${k.budget}</p>
+              </div>
+            `).join("")}
+          </div>
+
+          <div class="section-heading">
+            <h2>七、 信源可信度四级标准与现场剔除软广/洗稿铁证台账</h2>
+            <span>SOURCE CREDIBILITY &amp; REJECTED SHILL LOG</span>
+          </div>
+          <table class="compact-table">
+            <thead>
+              <tr>
+                <th style="width:24%;">信源等级</th>
+                <th style="width:38%;">核验代表渠道与实验室</th>
+                <th style="width:38%;">采信依据与权重策略</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${D.credibilityFramework.map(c => `
+                <tr>
+                  <td><strong>${c.tier}</strong></td>
+                  <td>${c.sources}</td>
+                  <td>${c.whyTrust}</td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+
+          <table class="compact-table" style="margin-bottom:0;">
+            <thead>
+              <tr>
+                <th style="width:7%;">编号</th>
+                <th style="width:17%;">污染类型</th>
+                <th style="width:28%;">本次抓获的具体软广/错漏目标</th>
+                <th style="width:35%;">反软广取证穿帮细节与事实核查</th>
+                <th style="width:13%;">处置结果</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${D.antiAdCases.map(a => `
+                <tr>
+                  <td style="font-family:var(--mono);font-weight:700;color:#be3e22;">${a.id}</td>
+                  <td><strong>${a.sourceType}</strong></td>
+                  <td>${a.target}</td>
+                  <td>${a.evidence}</td>
+                  <td><strong style="color:#1b5e43;">${a.action}</strong></td>
+                </tr>
+              `).join("")}
+            </tbody>
+          </table>
+        </section>
+      `;
+
+      root.innerHTML = html;
+    })();
+  </script>
+</body>
+</html>
